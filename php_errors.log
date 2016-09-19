@@ -1,0 +1,478 @@
+[18-Sep-2016 18:57:55 UTC] PHP Fatal error:  Call to private method User::gen_salt() from context '' in /home/ubuntu/workspace/testing/user_testing.php on line 6
+[18-Sep-2016 18:57:55 UTC] PHP Stack trace:
+[18-Sep-2016 18:57:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:06:28 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user_testing.php on line 7
+[18-Sep-2016 19:06:28 UTC] PHP Stack trace:
+[18-Sep-2016 19:06:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:06:34 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user_testing.php on line 7
+[18-Sep-2016 19:06:34 UTC] PHP Stack trace:
+[18-Sep-2016 19:06:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:30 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:30 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:30 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:41 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:41 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:41 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:41 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:41 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:41 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:41 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:41 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:41 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:42 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:42 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:42 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:42 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:42 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:42 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:43 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:43 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:43 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:07:43 UTC] PHP Fatal error:  Call to undefined function test_recursion() in /home/ubuntu/workspace/testing/user.php on line 41
+[18-Sep-2016 19:07:43 UTC] PHP Stack trace:
+[18-Sep-2016 19:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:07:43 UTC] PHP   2. User->test_recursion() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:08:04 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in /home/ubuntu/workspace/testing/user.php on line 42
+[18-Sep-2016 19:08:04 UTC] PHP Stack trace:
+[18-Sep-2016 19:08:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:12:32 UTC] PHP Warning:  Missing argument 1 for User::gen_hash(), called in /home/ubuntu/workspace/testing/user_testing.php on line 7 and defined in /home/ubuntu/workspace/testing/user.php on line 34
+[18-Sep-2016 19:12:32 UTC] PHP Stack trace:
+[18-Sep-2016 19:12:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:12:32 UTC] PHP   2. User->gen_hash() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 19:17:45 UTC] PHP Fatal error:  Maximum function nesting level of '256' reached, aborting! in /home/ubuntu/workspace/testing/user.php on line 43
+[18-Sep-2016 19:17:45 UTC] PHP Stack trace:
+[18-Sep-2016 19:17:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 19:17:45 UTC] PHP   2. User->gen_salt() /home/ubuntu/workspace/testing/user_testing.php:6
+[18-Sep-2016 19:17:45 UTC] PHP   3. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   4. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   5. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   6. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   7. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   8. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP   9. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  10. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  11. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  12. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  13. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  14. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  15. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  16. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  17. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  18. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  19. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  20. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  21. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  22. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  23. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  24. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  25. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  26. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  27. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  28. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  29. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  30. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  31. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  32. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  33. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  34. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  35. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  36. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  37. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  38. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  39. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  40. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  41. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  42. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  43. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  44. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  45. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  46. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  47. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  48. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  49. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  50. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  51. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  52. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  53. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  54. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  55. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  56. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  57. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  58. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  59. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  60. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  61. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  62. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  63. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  64. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  65. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  66. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  67. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  68. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  69. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  70. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  71. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  72. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  73. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  74. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  75. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  76. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  77. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  78. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  79. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  80. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  81. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  82. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  83. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  84. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  85. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  86. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  87. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  88. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  89. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  90. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  91. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  92. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  93. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  94. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  95. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  96. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  97. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  98. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP  99. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 100. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 101. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 102. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 103. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 104. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 105. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 106. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 107. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 108. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 109. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 110. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 111. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 112. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 113. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 114. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 115. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 116. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 117. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 118. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 119. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 120. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 121. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 122. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 123. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 124. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 125. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 126. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 127. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 128. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 129. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 130. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 131. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 132. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 133. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 134. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 135. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 136. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 137. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 138. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 139. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 140. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 141. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 142. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 143. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 144. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 145. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 146. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 147. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 148. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 149. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 150. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 151. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 152. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 153. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 154. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 155. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 156. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 157. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 158. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 159. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 160. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 161. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 162. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 163. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 164. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 165. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 166. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 167. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 168. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 169. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 170. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 171. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 172. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 173. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 174. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 175. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 176. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 177. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 178. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 179. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 180. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 181. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 182. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 183. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 184. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 185. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 186. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 187. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 188. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 189. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 190. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 191. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 192. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 193. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 194. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 195. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 196. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 197. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 198. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 199. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 200. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 201. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 202. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 203. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 204. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 205. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 206. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 207. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 208. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 209. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 210. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 211. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 212. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 213. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 214. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 215. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 216. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 217. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 218. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 219. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 220. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 221. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 222. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 223. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 224. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 225. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 226. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 227. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 228. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 229. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 230. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 231. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 232. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 233. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 234. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 235. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 236. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 237. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 238. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 239. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 240. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 241. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 242. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 243. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 244. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 245. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 246. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 247. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 248. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 249. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 250. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 251. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 252. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 253. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 254. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 255. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:17:45 UTC] PHP 256. User->gen_salt() /home/ubuntu/workspace/testing/user.php:48
+[18-Sep-2016 19:34:09 UTC] PHP Parse error:  syntax error, unexpected '$user' (T_VARIABLE) in /home/ubuntu/workspace/testing/user_testing.php on line 10
+[18-Sep-2016 19:45:52 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/testing/db_gateway.php on line 4
+[18-Sep-2016 19:45:52 UTC] PHP Stack trace:
+[18-Sep-2016 19:45:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 20:34:38 UTC] PHP Fatal error:  Cannot redeclare Gateway::__construct() in /home/ubuntu/workspace/testing/db_gateway.php on line 23
+[18-Sep-2016 20:34:38 UTC] PHP Stack trace:
+[18-Sep-2016 20:34:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 20:34:46 UTC] PHP Fatal error:  Call to private Gateway::__construct() from invalid context in /home/ubuntu/workspace/testing/user_testing.php on line 5
+[18-Sep-2016 20:34:46 UTC] PHP Stack trace:
+[18-Sep-2016 20:34:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 20:41:58 UTC] PHP Fatal error:  Class name must be a valid object or a string in /home/ubuntu/workspace/testing/db_gateway.php on line 25
+[18-Sep-2016 20:41:58 UTC] PHP Stack trace:
+[18-Sep-2016 20:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 20:41:58 UTC] PHP   2. Gateway::getInstance() /home/ubuntu/workspace/testing/user_testing.php:5
+[18-Sep-2016 21:11:07 UTC] PHP Warning:  include(db_gateway.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/testing/user_testing.php on line 3
+[18-Sep-2016 21:11:07 UTC] PHP Stack trace:
+[18-Sep-2016 21:11:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:11:07 UTC] PHP Warning:  include(): Failed opening 'db_gateway.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/testing/user_testing.php on line 3
+[18-Sep-2016 21:11:07 UTC] PHP Stack trace:
+[18-Sep-2016 21:11:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:11:16 UTC] PHP Fatal error:  Cannot redeclare class Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:11:16 UTC] PHP Stack trace:
+[18-Sep-2016 21:11:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:12:08 UTC] PHP Fatal error:  Cannot redeclare class Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:12:08 UTC] PHP Stack trace:
+[18-Sep-2016 21:12:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:12:08 UTC] PHP   2. include() /home/ubuntu/workspace/testing/user_testing.php:3
+[18-Sep-2016 21:12:19 UTC] PHP Fatal error:  Cannot redeclare class Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:12:19 UTC] PHP Stack trace:
+[18-Sep-2016 21:12:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:12:31 UTC] PHP Fatal error:  Cannot redeclare class DB_Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:12:31 UTC] PHP Stack trace:
+[18-Sep-2016 21:12:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:12:37 UTC] PHP Fatal error:  Cannot redeclare class DB_Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:12:37 UTC] PHP Stack trace:
+[18-Sep-2016 21:12:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:12:51 UTC] PHP Fatal error:  Cannot redeclare class Gateway in /home/ubuntu/workspace/testing/gateway.php on line 3
+[18-Sep-2016 21:12:51 UTC] PHP Stack trace:
+[18-Sep-2016 21:12:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:14:02 UTC] PHP Fatal error:  Class 'DB_Gateway' not found in /home/ubuntu/workspace/testing/user_testing.php on line 5
+[18-Sep-2016 21:14:02 UTC] PHP Stack trace:
+[18-Sep-2016 21:14:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:18:35 UTC] PHP Parse error:  syntax error, unexpected '$user' (T_VARIABLE) in /home/ubuntu/workspace/testing/user_testing.php on line 7
+[18-Sep-2016 21:18:40 UTC] PHP Warning:  Missing argument 1 for User::createUser(), called in /home/ubuntu/workspace/testing/user_testing.php on line 7 and defined in /home/ubuntu/workspace/testing/user.php on line 15
+[18-Sep-2016 21:18:40 UTC] PHP Stack trace:
+[18-Sep-2016 21:18:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:18:40 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:18:40 UTC] PHP Warning:  Missing argument 2 for User::createUser(), called in /home/ubuntu/workspace/testing/user_testing.php on line 7 and defined in /home/ubuntu/workspace/testing/user.php on line 15
+[18-Sep-2016 21:18:40 UTC] PHP Stack trace:
+[18-Sep-2016 21:18:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:18:40 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:22:46 UTC] PHP Warning:  Missing argument 1 for User::createUser(), called in /home/ubuntu/workspace/testing/user_testing.php on line 7 and defined in /home/ubuntu/workspace/testing/user.php on line 15
+[18-Sep-2016 21:22:46 UTC] PHP Stack trace:
+[18-Sep-2016 21:22:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:22:46 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:22:46 UTC] PHP Warning:  Missing argument 2 for User::createUser(), called in /home/ubuntu/workspace/testing/user_testing.php on line 7 and defined in /home/ubuntu/workspace/testing/user.php on line 15
+[18-Sep-2016 21:22:46 UTC] PHP Stack trace:
+[18-Sep-2016 21:22:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:22:46 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:22:59 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/testing/user.php on line 75
+[18-Sep-2016 21:22:59 UTC] PHP Stack trace:
+[18-Sep-2016 21:22:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:22:59 UTC] PHP   2. User->genId() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:29:26 UTC] PHP Fatal error:  Call to undefined function genId() in /home/ubuntu/workspace/testing/user.php on line 18
+[18-Sep-2016 21:29:26 UTC] PHP Stack trace:
+[18-Sep-2016 21:29:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:29:26 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:33:54 UTC] PHP Fatal error:  Call to undefined function genId() in /home/ubuntu/workspace/testing/user.php on line 18
+[18-Sep-2016 21:33:54 UTC] PHP Stack trace:
+[18-Sep-2016 21:33:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:33:54 UTC] PHP   2. User->createUser() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:56:43 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetchMode() in /home/ubuntu/workspace/testing/user.php on line 19
+[18-Sep-2016 21:56:43 UTC] PHP Stack trace:
+[18-Sep-2016 21:56:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:56:43 UTC] PHP   2. User->login() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 21:56:53 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetchMode() in /home/ubuntu/workspace/testing/user.php on line 19
+[18-Sep-2016 21:56:53 UTC] PHP Stack trace:
+[18-Sep-2016 21:56:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 21:56:53 UTC] PHP   2. User->login() /home/ubuntu/workspace/testing/user_testing.php:7
+[18-Sep-2016 22:00:54 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/testing/user.php on line 30
+[18-Sep-2016 22:00:54 UTC] PHP Stack trace:
+[18-Sep-2016 22:00:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 22:20:18 UTC] PHP Fatal error:  Cannot access protected property Exception::$message in /home/ubuntu/workspace/testing/errors.php on line 4
+[18-Sep-2016 22:20:18 UTC] PHP Stack trace:
+[18-Sep-2016 22:20:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 22:20:18 UTC] PHP   2. include() /home/ubuntu/workspace/testing/user_testing.php:5
+[18-Sep-2016 22:21:36 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'This is my user error' in /home/ubuntu/workspace/testing/user_testing.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/testing/user_testing.php on line 2
+[18-Sep-2016 22:24:42 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/testing/user_testing.php on line 3
+[18-Sep-2016 22:24:42 UTC] PHP Stack trace:
+[18-Sep-2016 22:24:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 22:26:29 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Incorrect password' in /home/ubuntu/workspace/testing/user.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/testing/user_testing.php(5): User->login('sean', 'passwddord')
+#1 {main}
+  thrown in /home/ubuntu/workspace/testing/user.php on line 36
+[18-Sep-2016 22:37:46 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/testing/user.php on line 71
+[18-Sep-2016 22:37:46 UTC] PHP Stack trace:
+[18-Sep-2016 22:37:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 22:37:46 UTC] PHP   2. User->checkIfAvail() /home/ubuntu/workspace/testing/user_testing.php:6
+[18-Sep-2016 22:51:50 UTC] PHP Fatal error:  Call to undefined method User::udpatePassword() in /home/ubuntu/workspace/testing/user_testing.php on line 6
+[18-Sep-2016 22:51:50 UTC] PHP Stack trace:
+[18-Sep-2016 22:51:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 23:01:40 UTC] PHP Fatal error:  Call to private method User::getUserById() from context '' in /home/ubuntu/workspace/testing/user_testing.php on line 6
+[18-Sep-2016 23:01:40 UTC] PHP Stack trace:
+[18-Sep-2016 23:01:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 23:10:06 UTC] PHP Fatal error:  Call to undefined function getUserById() in /home/ubuntu/workspace/testing/user.php on line 108
+[18-Sep-2016 23:10:06 UTC] PHP Stack trace:
+[18-Sep-2016 23:10:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/user_testing.php:0
+[18-Sep-2016 23:10:06 UTC] PHP   2. User->updatePassword() /home/ubuntu/workspace/testing/user_testing.php:6
+[19-Sep-2016 04:33:58 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/testing/post_testing.php on line 6
+[19-Sep-2016 04:33:58 UTC] PHP Stack trace:
+[19-Sep-2016 04:33:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 04:34:07 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/testing/post.php on line 29
+[19-Sep-2016 04:34:07 UTC] PHP Stack trace:
+[19-Sep-2016 04:34:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 04:34:16 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/testing/post_testing.php on line 6
+[19-Sep-2016 04:34:16 UTC] PHP Stack trace:
+[19-Sep-2016 04:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 04:34:28 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/testing/post_testing.php on line 6
+[19-Sep-2016 04:34:28 UTC] PHP Stack trace:
+[19-Sep-2016 04:34:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 04:38:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/testing/post.php on line 26
+[19-Sep-2016 04:38:27 UTC] PHP Stack trace:
+[19-Sep-2016 04:38:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 04:51:16 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/testing/post.php on line 32
+[19-Sep-2016 04:51:16 UTC] PHP Stack trace:
+[19-Sep-2016 04:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:10:29 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/testing/user.php on line 11
+[19-Sep-2016 05:10:29 UTC] PHP Stack trace:
+[19-Sep-2016 05:10:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:10:29 UTC] PHP   2. User->__construct() /home/ubuntu/workspace/testing/post_testing.php:5
+[19-Sep-2016 05:14:20 UTC] PHP Warning:  Illegal string offset 'username' in /home/ubuntu/workspace/testing/post.php on line 32
+[19-Sep-2016 05:14:20 UTC] PHP Stack trace:
+[19-Sep-2016 05:14:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:14:20 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:16
+[19-Sep-2016 05:14:20 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/testing/post.php on line 33
+[19-Sep-2016 05:14:20 UTC] PHP Stack trace:
+[19-Sep-2016 05:14:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:14:20 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:16
+[19-Sep-2016 05:14:38 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/testing/post.php on line 32
+[19-Sep-2016 05:14:38 UTC] PHP Stack trace:
+[19-Sep-2016 05:14:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:14:38 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:16
+[19-Sep-2016 05:14:50 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/testing/post_testing.php on line 5
+[19-Sep-2016 05:14:50 UTC] PHP Stack trace:
+[19-Sep-2016 05:14:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:15:04 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/testing/post_testing.php on line 5
+[19-Sep-2016 05:15:04 UTC] PHP Stack trace:
+[19-Sep-2016 05:15:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:15:12 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/testing/post_testing.php on line 5
+[19-Sep-2016 05:15:12 UTC] PHP Stack trace:
+[19-Sep-2016 05:15:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:15:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/testing/post.php on line 30
+[19-Sep-2016 05:15:22 UTC] PHP Stack trace:
+[19-Sep-2016 05:15:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:15:22 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:16
+[19-Sep-2016 05:15:37 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/testing/post.php on line 30
+[19-Sep-2016 05:15:37 UTC] PHP Stack trace:
+[19-Sep-2016 05:15:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:15:37 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:17
+[19-Sep-2016 05:17:44 UTC] PHP Fatal error:  Call to undefined function filter() in /home/ubuntu/workspace/testing/post.php on line 24
+[19-Sep-2016 05:17:44 UTC] PHP Stack trace:
+[19-Sep-2016 05:17:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:17:44 UTC] PHP   2. Post->createPost() /home/ubuntu/workspace/testing/post_testing.php:17
+[19-Sep-2016 05:24:37 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/testing/post.php on line 59
+[19-Sep-2016 05:24:37 UTC] PHP Stack trace:
+[19-Sep-2016 05:24:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/testing/post_testing.php:0
+[19-Sep-2016 05:24:37 UTC] PHP   2. Post->editPost() /home/ubuntu/workspace/testing/post_testing.php:17
+[19-Sep-2016 05:24:37 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/testing/post.php:59

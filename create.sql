@@ -1,7 +1,12 @@
+--------------------------- CREATE DATABASE
 CREATE DATABASE IF NOT EXISTS forum;
 
+--------------------------- CREATE DATABASE USER
+CREATE USER 'forum_user'@'localhost' IDENTIFIED BY 'forumlab1';
+GRANT ALL ON forum.* TO 'forum_user'@'localhost';
+
 --------------------------- TABLE DEFINITIONS
--- CREATE USER
+-- CREATE USER TABLE
 CREATE TABLE IF NOT EXISTS user (
     id INT NOT NULL, 
     username varchar(45) NOT NULL UNIQUE,
@@ -54,6 +59,19 @@ BEGIN
 END//
 DELIMITER ;
 
+DELIMITER //
+CREATE PROCEDURE `get_user_by_username` (IN user_username VARCHAR(45)) 
+BEGIN 
+    SELECT * FROM user WHERE username = user_username;
+END//
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE `get_user_by_id` (IN user_id INT) 
+BEGIN 
+    SELECT * FROM user WHERE id = user_id;
+END//
+DELIMITER ;
 
 -- SET USER PRIVILEGE 
 DELIMITER //
@@ -142,10 +160,20 @@ CREATE PROCEDURE `get_posts` ()
     END//
 DELIMITER ;
 
+-- GET ALL POSTS BY USER
 DELIMITER // 
 CREATE PROCEDURE `get_posts_user` (IN user_id INT)
     BEGIN 
         SELECT * FROM post p WHERE p.user_id = user_id;
+    END//
+DELIMITER ;
+
+-- GET ALL POSTS - ORDER NEWEST TO OLDEST 
+DELIMITER // 
+CREATE PROCEDURE `get_posts_time` ()
+    BEGIN 
+        SELECT * FROM post p 
+        ORDER BY posted_at DESC;
     END//
 DELIMITER ;
 
@@ -216,6 +244,7 @@ DROP table post;
 DROP TABLE user;
 
 DROP PROCEDURE create_user;
+DROP PROCEDURE get_user_by_username
 DROP PROCEDURE create_user;
 DROP PROCEDURE set_privilege;
 DROP PROCEDURE update_username;
