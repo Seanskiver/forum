@@ -73,6 +73,29 @@ BEGIN
 END//
 DELIMITER ;
 
+DELIMITER //
+CREATE PROCEDURE `get_all_users` () 
+BEGIN 
+    SELECT * FROM user ORDER BY created_at DESC;
+END//
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE `get_all_users_limit` (IN user_limit INT) 
+BEGIN 
+    SELECT * FROM user ORDER BY created_at DESC LIMIT user_limit;
+END//
+DELIMITER ;
+
+-- DELETE USER
+DELIMITER //
+CREATE PROCEDURE `delete_user` (IN user_id INT) 
+BEGIN 
+    DELETE FROM user WHERE id = user_id;
+END//
+DELIMITER ;
+
 -- SET USER PRIVILEGE 
 DELIMITER //
 CREATE PROCEDURE `set_privilege` (IN id INT, IN priv BIT)
@@ -144,10 +167,17 @@ DELIMITER ;
 
 
 -- GET ONE 
+
 DELIMITER // 
-CREATE PROCEDURE `get_post` (IN id INT)
+CREATE PROCEDURE `get_post` (IN arg_post_id INT)
     BEGIN 
-        SELECT * FROM post p WHERE p.id = id; 
+        SELECT p.*, u.username,
+        ( SELECT COUNT(*) FROM comment WHERE post_id = p.id AND parent_id IS NULL) num_comments
+        FROM post p
+        INNER JOIN user u 
+        ON p.user_id = u.id
+        WHERE p.id = arg_post_id;
+        
     END//
 DELIMITER ;
 
@@ -172,10 +202,17 @@ DELIMITER ;
 DELIMITER // 
 CREATE PROCEDURE `get_posts_time` ()
     BEGIN 
-        SELECT * FROM post p 
-        ORDER BY posted_at DESC;
+        SELECT p.*, u.username,
+        ( SELECT COUNT(*) FROM comment WHERE post_id = p.id AND parent_id IS NULL) num_comments
+        FROM post p
+        INNER JOIN user u 
+        ON p.user_id = u.id
+        ORDER BY p.posted_at DESC;
     END//
 DELIMITER ;
+
+
+
 
 -- (MAYBE) GET POST BY SEARCH
  -- TODO
@@ -192,15 +229,6 @@ CREATE PROCEDURE `create_comment` (IN post_id INT, IN user_id INT, IN body TEXT)
     END//
 DELIMITER ;
 
--- REPLY TO COMMENT
-DELIMITER //
-CREATE PROCEDURE `reply_comment` (IN post_id INT, IN parent_id INT, IN user_id INT, IN body TEXT)
-    BEGIN 
-        INSERT INTO comment (post_id, parent_id, user_id, body)
-        VALUES (post_id, parent_id, user_id, body);
-    END//
-DELIMITER ;
-
 -- EDIT COMMENT
 DELIMITER // 
 CREATE PROCEDURE `edit_comment` (IN id INT, IN body TEXT)
@@ -213,6 +241,7 @@ DELIMITER ;
 
 -- DELETE COMMENT 
 DELIMITER //
+
 CREATE PROCEDURE `delete_comment` (IN c_id INT)
     BEGIN 
         DELETE FROM comment WHERE id = c_id;
@@ -231,10 +260,39 @@ DELIMITER ;
 DELIMITER // 
 CREATE PROCEDURE `get_comments_post` (IN post_id INT)
     BEGIN 
-        SELECT * FROM comment c 
-        WHERE c.post_id = post_id;
+        SELECT c.*, u.username,
+        ( SELECT COUNT(*) FROM comment WHERE parent_id = c.id) num_replies
+        FROM comment c 
+        INNER JOIN user u 
+        ON c.user_id = u.id
+        WHERE c.post_id = post_id
+        AND c.parent_id IS NULL;
     END//
 DELIMITER ;
+
+------- COMMENT REPLY PROCS 
+-- REPLY TO COMMENT
+DELIMITER //
+CREATE PROCEDURE `reply_comment` (IN post_id INT, IN parent_id INT, IN user_id INT, IN body TEXT)
+    BEGIN 
+        INSERT INTO comment (post_id, parent_id, user_id, body)
+        VALUES (post_id, parent_id, user_id, body);
+    END//
+DELIMITER ;
+
+
+-- GET COMMENT REPLIES
+DELIMITER // 
+CREATE PROCEDURE `get_comment_replies` (IN comment_id INT)
+    BEGIN 
+        SELECT c.*, u.username
+        FROM comment c 
+        INNER JOIN user u
+        ON u.id = c.user_id
+        WHERE c.parent_id = comment_id; 
+    END//
+DELIMITER ;
+
 
 
 
@@ -257,9 +315,17 @@ DROP PROCEDURE delete_post;
 DROP PROCEDURE get_post;
 DROP PROCEDURE get_posts;
 DROP PROCEDURE get_posts_user;
+DROP PROCEDURE get_posts_time;
 
 DROP PROCEDURE create_comment;
 DROP PROCEDURE edit_comment;
 DROP PROCEDURE delete_comment;
 DROP PROCEDURE get_comment;
+DROP PROCEDURE get_comment_replies;
 DROP PROCEDURE get_comments_post;
+
+
+----------------------------- TESTING 
+
+
+

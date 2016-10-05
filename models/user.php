@@ -23,9 +23,6 @@
                 echo "Database error. check back later";
             }
             
-            if (!$result) {
-                echo "No results";         
-            }
 
             $inputHash = $this->genHash($result['salt'], $password);
             
@@ -33,12 +30,18 @@
                 $this->id = $result['id'];
                 $this->username = $result['username'];
                 $this->privilege = $result['admin'];
-                
-                $_SESSION['user'] = $this->id;
+
+                $_SESSION['user_id'] = $this->id;
+                $_SESSION['username'] = $this->username;
+                $_SESSION['admin'] = $result['admin'];
             } else {
                 return false;
             }
             
+        }
+        
+        public function logout() {
+            session_destroy();
         }
         
         public function createUser($username, $password, $admin = 0) {
@@ -64,6 +67,20 @@
             }
         }
         
+        public function deleteUser($userId) {
+            $sql = 'CALL delete_user(:id)';
+            try {
+                $gateway = Gateway::getInstance();
+
+                $stmt = $gateway->dbh->prepare($sql);
+                $stmt->bindParam(':id', $userId, PDO::PARAM_INT);
+                $stmt->execute();
+            } catch(PDOException $e) {
+                echo "<b>Deletion Failed!</b> <br>";
+                $e->message;
+            }
+        }
+        
         // Checks database to see if a username is already in use
         public function checkIfAvail($username) {
             $sql = 'CALL get_user_by_username(:username)';
@@ -81,6 +98,33 @@
             } else {
                 return false;
             }
+        }
+        
+        public function getAllUsers($limit = NULL) {
+            if ($limit === NULL) {
+                $sql = 'CALL get_all_users()';            
+            } else {
+                $sql = 'CALL get_all_users_limit(:limit)';
+            }
+    
+            
+            try {
+                $gateway = Gateway::getInstance();
+                
+                $stmt = $gateway->dbh->prepare($sql);
+                if ($limit != NULL) $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+                $stmt->execute();
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $result = $stmt->fetchAll();
+                
+                return $result; 
+            } catch(PDOException $e) {
+                echo "Database error. check back later";
+            }
+        }
+        
+        public function getUser($id) {
+            
         }
         
         public function setPrivilege($id, $priv) {
@@ -122,9 +166,7 @@
 
         }
         
-        public function deleteUser($id) {
-            
-        }
+        
         
         
         //---------------------------------------------- PRIVATE FUNCTIONS
@@ -175,8 +217,50 @@
             }
         }
         
-        private function validateUser($username, $password) {
+        public function validateUserPassword($username, $password) {
+            $sql = 'CALL get_user_by_username(:username)';
             
+            try {
+                $gateway = Gateway::getInstance();
+                
+                $stmt = $gateway->dbh->prepare($sql);
+                $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+                $stmt->execute();
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $result = $stmt->fetchAll()[0];
+            } catch(PDOException $e) {
+                echo "Database error. check back later";
+            }
+
+            $inputHash = $this->genHash($result['salt'], $password);
+            
+            if ($inputHash == $result['password_hash']) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        public function checkUserExists($username) {
+            $sql = 'CALL get_user_by_username(:username)';
+            
+            try {
+                $gateway = Gateway::getInstance();
+                
+                $stmt = $gateway->dbh->prepare($sql);
+                $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+                $stmt->execute();
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $result = $stmt->fetchAll()[0];
+            } catch(PDOException $e) {
+                echo "Database error. check back later";
+            }
+            
+            if (empty($result)) {
+                return false;
+            } else {
+                return true;
+            }
         }
     }
 ?>

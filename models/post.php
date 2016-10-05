@@ -18,6 +18,25 @@
                 echo $e->getMessage();
                 return false;
             }
+            
+
+        }
+        
+        public function getPost($id) {
+            $sql = 'CALL get_post(:id)';
+            
+            try {
+                $gateway = Gateway::getInstance();
+                $stmt = $gateway->dbh->prepare($sql);
+                $stmt->bindParam(':id', $id);
+                $stmt->execute();
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $result = $stmt->fetchAll()[0];
+                return $result;
+            } catch (PDOException $e) {
+                echo "Error getting post<br>";
+                echo $e->getMessage();
+            }
         }
         
         public function createPost($title, $body) {
@@ -25,14 +44,14 @@
             $body = filter_var($body, FILTER_SANITIZE_STRING);
             $sql = 'CALL create_post(:user_id, :title, :body)';
             
-            if (!isset($_SESSION['user'])) {
+            if (!isset($_SESSION['user_id'])) {
                 return false; 
             } 
             
             try {
                 $gateway = Gateway::getInstance();
                 $stmt = $gateway->dbh->prepare($sql);
-                $stmt->bindParam(':user_id', $_SESSION['user'], PDO::PARAM_INT);
+                $stmt->bindParam(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
                 $stmt->bindParam(':title', $title, PDO::PARAM_STR);
                 $stmt->bindParam(':body', $body, PDO::PARAM_STR);
                 $stmt->execute();                
